@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Dose Healthcare | Doctors & Booking</title>
+    <meta name="description" content="Book appointments with specialist doctors at Best Dose Healthcare, Patta Paloura Jammu. Gynecology, Pediatrics, ENT, Urology, Physiotherapy and more. Open daily 8AM-10PM.">
+    <meta name="keywords" content="book doctor Jammu, specialist clinic Paloura, gynecologist Jammu, pediatrician Jammu, ENT Jammu, best dose healthcare doctors">
+    <meta property="og:title" content="Our Doctors | Best Dose Healthcare, Jammu">
+    <meta property="og:description" content="Book appointments with top specialist doctors at Best Dose Healthcare, Patta Paloura Jammu. Gynecology, ENT, Pediatrics, Urology & more.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="padding-top: 124px;">
+
+    <!-- Walk-in Emergency Banner -->
+    <div class="walkin-banner">
+        <div class="container" style="display:flex; align-items:center; justify-content:center; gap:0.75rem; flex-wrap:wrap;">
+            <span class="walkin-dot"></span>
+            <span><strong>Walk-ins Welcome</strong> &nbsp;·&nbsp; Minor injuries, accidents & emergencies seen immediately</span>
+            <span style="opacity:0.6;">|</span>
+            <span><i class="fa-solid fa-clock" style="margin-right:4px;"></i>Open Daily 8AM – 10PM</span>
+            <a href="tel:+917006630668" style="background:rgba(255,255,255,0.2); color:white; padding:0.2rem 0.9rem; border-radius:9999px; font-weight:700; text-decoration:none; border:1px solid rgba(255,255,255,0.4);">
+                <i class="fa-solid fa-phone" style="margin-right:4px;"></i>+91 70066 30668
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" style="background: var(--primary); color: white;">
+        <div class="container">
+            <div class="logo" style="color: white;">
+                <i class="fa-solid fa-heart-pulse logo-icon"></i>
+                <span class="logo-text">Best Dose <span class="fw-light">Healthcare</span></span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars" style="color: white;"></i>
+            </button>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <a href="doctors.html" class="dropbtn">Doctors <i class="fa-solid fa-chevron-down" style="font-size: 0.8rem;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="doctors.html?doc=anjali">Dr. Anjali Verma (Gynecology)</a>
+                        <a href="doctors.html?doc=sunita">Dr. Sunita Gupta (Physician)</a>
+                        <a href="doctors.html?doc=rajesh">Dr. Rajesh Verma (Pediatrics)</a>
+                        <a href="doctors.html?doc=anil">Dr. Anil Sharma (ENT)</a>
+                        <a href="doctors.html?doc=amit">Dr. Amit Kumar (Urology)</a>
+                        <a href="doctors.html?doc=vikas">Dr. Vikas Singh (Surgeon)</a>
+                        <a href="doctors.html?doc=priya">Dr. Priya Singh (Physiotherapy)</a>
+                    </div>
+                </div>
+                <a href="reviews.html">Reviews</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://maps.app.goo.gl/DbcS8rqPHViiDvPK7" target="_blank" class="btn btn-locate" style="background: transparent; color: white; border: 1px solid white;"><i class="fa-solid fa-location-dot"></i> Locate</a>
+                <a href="doctors.html" class="btn btn-book" style="background: white; color: var(--primary);">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="bg-light" style="padding: 3rem 0;">
+        <div class="container text-center fade-in">
+            <h2>Our Doctors</h2>
+            <p>Find the right specialist and book an appointment today.</p>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="container">
+        <!-- Filters -->
+        <div class="filter-tabs fade-in">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Gynecology">Gynecology</button>
+            <button class="filter-btn" data-filter="Physician">Physician</button>
+            <button class="filter-btn" data-filter="Pediatrics">Pediatrics</button>
+            <button class="filter-btn" data-filter="ENT">ENT</button>
+            <button class="filter-btn" data-filter="Urology">Urology</button>
+            <button class="filter-btn" data-filter="Surgeon">Surgeons</button>
+            <button class="filter-btn" data-filter="Physiotherapy">Physiotherapy</button>
+        </div>
+
+        <!-- Doctors Grid -->
+        <div class="grid">
+            <div class="card doc-card doc-item fade-in" data-specialty="Gynecology">
+                <div class="doc-avatar" style="background:none;"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=100&h=100&q=80" style="width:100px;height:100px;border-radius:50%;object-fit:cover;" alt="Dr. Anjali Verma"></div>
+                <span class="doc-tag">Gynecology & Infertility</span>
+                <h3 class="card-title">Dr. Anjali Verma</h3>
+                <p style="margin-bottom:0.5rem; color: var(--text-light); font-size:0.875rem;">15 Years Experience</p>
+                <p style="margin-bottom: 1rem; font-size:0.9rem;">Specialises in high-risk pregnancies, PCOS, and infertility treatments.</p>
+                <button class="btn book-btn" data-doc="Dr. Anjali Verma">Book Appointment</button>
+            </div>
+            
+            <div class="card doc-card doc-item fade-in" data-specialty="Physician">
+                <div class="doc-avatar" style="background:none;"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=100&h=100&q=80" style="width:100px;height:100px;border-radius:50%;object-fit:cover;" alt="Dr. Sunita Gupta"></div>
+                <span class="doc-tag">General Physician</span>
+                <h3 class="card-title">Dr. Sunita Gupta</h3>
+                <p style="margin-bottom:0.5rem; color: var(--text-light); font-size:0.875rem;">21 Years Experience</p>
+                <p style="margin-bottom: 1rem; font-size:0.9rem;">Expert in diabetes management, hypertension, and general internal medicine.</p>
+                <button class="btn book-btn" data-doc="Dr. Sunita Gupta">Book Appointment</button>
+            </div>
+
+            <div class="card doc-card doc-item fade-in" data-specialty="Pediatrics">
+                <div class="doc-avatar" style="background:none;"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=100&h=100&q=80" style="width:100px;height:100px;border-radius:50%;object-fit:cover;" alt="Dr. Rajesh Verma"></div>
+                <span class="doc-tag">Pediatrics</span>
+                <h3 class="card-title">Dr. Rajesh Verma</h3>
+                <p style="margin-bottom:0.5rem; color: var(--text-light); font-size:0.875rem;">8 Years Experience</p>
+                <p style="margin-bottom: 1rem; font-size:0.9rem;">Focused on newborn care, childhood vaccinations, and growth disorders.</p>
+                <button class="btn book-btn" data-doc="Dr. Rajesh Verma">Book Appointment</button>
+            </div>
+
+            <div class="card doc-card doc-item fade-in" data-specialty="Surgeon">
+                <div class="doc-avatar" style="background:none;"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=100&h=100&q=80" style="width:100px;height:100px;border-radius:50%;object-fit:cover;" alt="Dr. Vikas Singh"></div>
+                <span class="doc-tag">Laparoscopic Surgeon</span>
+                <h3 class="card-title">Dr. Vikas Singh</h3>
+                <p style="margin-bottom:0.5rem; color: var(--text-light); font-size:0.875rem;">20 Years Experience</p>
+                <p style="margin-bottom: 1rem; font-size:0.9rem;">Expert in laparoscopic hernia repair, appendectomy, and gallbladder surgery.</p>
+                <button class="btn book-btn" data-doc="Dr. Vikas Singh">Book Appointment</button>
+            </div>
+
+            <div class="card doc-card doc-item fade-in" data-specialty="ENT">
+                <div class="doc-avatar" style="background:none;"><img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=100&h=100&q=80" style="width:100px;height:100px;border-radius:50%;object-fit:cover;" alt="Dr. Anil Sharma"></div>
+                <span class="doc-tag">ENT Specialist</span>
+                <h3 class="card-title">Dr. Anil Sharma</h3>
+                <p style="margin-bottom:0.5rem; color: var(--text-light); font-size:0.875rem;">10 Years Experience</p>
+                <p style="margin-bottom: 1rem; font-size:0.9rem;">Specialises in sinusitis, hearing loss, tonsillitis, and nasal surgery.</p>
+                <button class="btn book-btn" data-doc="Dr. Anil Sharma">Book Appointment</button>
+            </div>
+            
+            <div class="card doc-card doc-item fade-in" data-specialty="Urology">
+                <div class="doc-avatar" style="background:none;"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=100&h=100&q=80" style="width:100px;height:100px;border-radius:50%;object-fit:cover;" alt="Dr. Amit Kumar"></div>
+                <span class="doc-tag">Urology Specialist</span>
+                <h3 class="card-title">Dr. Amit Kumar</h3>
+                <p style="margin-bottom:0.5rem; color: var(--text-light); font-size:0.875rem;">14 Years Experience</p>
+                <p style="margin-bottom: 1rem; font-size:0.9rem;">Treats kidney stones, urinary tract infections, and prostate conditions.</p>
+                <button class="btn book-btn" data-doc="Dr. Amit Kumar">Book Appointment</button>
+            </div>
+            
+            <div class="card doc-card doc-item fade-in" data-specialty="Physiotherapy">
+                <div class="doc-avatar" style="background:none;"><img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=100&h=100&q=80" style="width:100px;height:100px;border-radius:50%;object-fit:cover;" alt="Dr. Priya Singh"></div>
+                <span class="doc-tag">Physiotherapist</span>
+                <h3 class="card-title">Dr. Priya Singh</h3>
+                <p style="margin-bottom:0.5rem; color: var(--text-light); font-size:0.875rem;">9 Years Experience</p>
+                <p style="margin-bottom: 1rem; font-size:0.9rem;">Specialises in sports injuries, back pain rehabilitation, and post-surgery recovery.</p>
+                <button class="btn book-btn" data-doc="Dr. Priya Singh">Book Appointment</button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Best Dose Healthcare</h3>
+                    <p style="color: var(--text-light); margin-top: 1rem;">Pillar no. 79, opposite BSF Campus, Patta, Paloura, Jammu, J&K 180002</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="doctors.html">Doctors</a>
+                    <a href="reviews.html">Reviews</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <p style="color: var(--text-light); margin-top: 1rem;">Mon - Sun</p>
+                    <p style="color: var(--text-light);">8:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+            <div class="text-center" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; color: var(--text-light);">
+                &copy; 2026 Best Dose Healthcare. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917006630668?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Best%20Dose%20Healthcare."
+       target="_blank"
+       title="Chat with us on WhatsApp"
+       style="position:fixed; bottom:2rem; left:2rem; background:#25d366; color:white; border-radius:50%; width:60px; height:60px; display:flex; align-items:center; justify-content:center; font-size:1.8rem; box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:9999; transition: transform 0.3s ease;"
+       onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

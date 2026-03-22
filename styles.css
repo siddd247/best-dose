@@ -1154,6 +1154,25 @@ body {
     display: none !important;
   }
 
+  /* RE-ENABLE HERO CAROUSEL ANIMATION & PERFORMANCE TWEAKS */
+  .hero {
+    contain: layout style !important;
+    isolation: isolate !important;
+  }
+
+  .hero-bg {
+    animation: heroCarousel 15s infinite !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-color: transparent !important;
+    will-change: background-image !important;
+    transform: translateZ(0) !important;
+    -webkit-transform: translateZ(0) !important;
+    backface-visibility: hidden !important;
+    -webkit-backface-visibility: hidden !important;
+    image-rendering: optimizeSpeed !important;
+  }
+
   /* HERO SECTION EXACT LAYOUT */
   .hero-content {
     display: flex !important;
@@ -1210,10 +1229,10 @@ body {
   }
 
   .hero-content>p:nth-of-type(2) {
-    background: rgba(255, 255, 255, 0.18) !important;
-    border: 1.5px solid rgba(255, 255, 255, 0.4) !important;
+    background: rgba(26, 86, 219, 0.25) !important;
+    border: 1.5px solid rgba(26, 86, 219, 0.7) !important;
     border-radius: 9999px !important;
-    padding: 0.4rem 1.25rem !important;
+    padding: 0.35rem 1.25rem !important;
     color: white !important;
     font-size: 1rem !important;
     font-weight: 700 !important;
@@ -1227,7 +1246,7 @@ body {
 
   .hero-content>p:nth-of-type(2):hover,
   .hero-content>p:nth-of-type(2):active {
-    border-color: var(--primary) !important;
+    border-color: #1a56db !important;
     border-width: 2px !important;
   }
 
@@ -1265,23 +1284,33 @@ body {
 
   .hero-content>div[style*="display: flex"] {
     background: transparent !important;
-    padding: 0 !important;
+    padding: 0 1rem !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
     border-radius: 0 !important;
     box-shadow: none !important;
     gap: 0.5rem !important;
     flex-wrap: nowrap !important;
+    justify-content: center !important;
   }
 
   .header-promo {
-    font-size: 0.78rem !important;
-    padding: 0.4rem 0.9rem !important;
+    font-size: 0.75rem !important;
+    padding: 0.35rem 0.75rem !important;
     white-space: nowrap !important;
     justify-content: center !important;
     text-align: center !important;
+    flex-shrink: 0 !important;
+    max-width: 48% !important;
   }
 
   .header-promo.gradient-green {
+    margin-left: 0.5rem !important;
     animation: pulse-promo 2.5s infinite !important;
+  }
+
+  .header-promo.gradient-orange {
+    margin-right: 0.5rem !important;
   }
 
   /* 5. INFO STRIP (Trust Badges Stacked & Cleared from Hero) */

@@ -338,6 +338,7 @@ section {
   background-size: cover;
   background-position: center;
   z-index: -2;
+  background-image: url('images/hero-1.jpg');
   animation: heroCarousel 15s infinite;
 }
 
@@ -372,17 +373,17 @@ section {
 
   0%,
   33% {
-    background-image: url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80');
+    background-image: url('images/hero-1.jpg');
   }
 
   34%,
   66% {
-    background-image: url('https://images.unsplash.com/photo-1638202993928-7267aad84c31?auto=format&fit=crop&q=80');
+    background-image: url('images/hero-2.jpg');
   }
 
   67%,
   100% {
-    background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80');
+    background-image: url('images/hero-3.jpg');
   }
 }
 
